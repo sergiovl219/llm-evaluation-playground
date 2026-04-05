@@ -1,0 +1,35 @@
+[
+  {
+    "input_text": "Hey support, my account ID 10934 is locked out. I tried resetting my password but the 'Forgot Password' link on the login page gives me a 500 error. This is urgent as I need to pay my invoice today.",
+    "expected_output": {
+      "ticket_id": "10934",
+      "customer_name": null,
+      "issue_category": "login",
+      "priority": "high",
+      "summary": "Customer cannot log in and encounters a 500 error when using the password reset link.",
+      "mentioned_products": []
+    }
+  },
+  {
+    "input_text": "Hello, I am Sarah Connor. The new analytics dashboard feature is missing the export to CSV button that was promised in the last release notes. Can we get an ETA on this?",
+    "expected_output": {
+      "ticket_id": null,
+      "customer_name": "Sarah Connor",
+      "issue_category": "bug",
+      "priority": "medium",
+      "summary": "The export to CSV button is missing from the new analytics dashboard.",
+      "mentioned_products": ["analytics dashboard"]
+    }
+  },
+  {
+    "input_text": "The entire billing system is down! We keep getting charged multiple times for the Pro Plan. Ticket ref: #ERR-992. Please fix immediately, this is costing us thousands.",
+    "expected_output": {
+      "ticket_id": "ERR-992",
+      "customer_name": null,
+      "issue_category": "billing",
+      "priority": "critical",
+      "summary": "The billing system is malfunctioning and charging multiple times for the Pro Plan.",
+      "mentioned_products": ["Pro Plan", "billing system"]
+    }
+  }
+]
